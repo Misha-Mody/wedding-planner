@@ -38,7 +38,7 @@ Before Changes
 
 <img width="1011" alt="Screenshot 2022-12-11 at 12 09 33 AM" src="https://user-images.githubusercontent.com/44525752/206893140-ebeef566-f082-4cb9-8b61-fd7215cdbf8e.png">
 
-# Lighthouse Accesibility Report
+# [Lighthouse Accesibility Report](https://github.com/Misha-Mody/wedding-planner/blob/main/LighthouseAccesibilityReport.pdf)
 
 <img width="1088" alt="Screenshot 2022-12-11 at 12 36 00 AM" src="https://user-images.githubusercontent.com/44525752/206894091-30abe133-7178-46ee-9bbc-9e94a2f06f5d.png">
 
