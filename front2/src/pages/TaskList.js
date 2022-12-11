@@ -71,17 +71,6 @@ export default function TaskList() {
   const removeTodo = async (id) => {
     const removedArr = [...todos].filter((todo) => todo.taskid !== id);
     setTodos(removedArr);
-    await fetch("/delete", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify({ id: id }),
-    }).catch((error) => {
-      console.log(error);
-      return;
-    });
-
     // window.location.reload(false);
   };
 

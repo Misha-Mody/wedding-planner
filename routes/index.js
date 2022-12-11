@@ -48,6 +48,21 @@ router.get("/getUserCards/:userid", async function (req, res, next) {
   }
 });
 
+router.post("/delete", async function (req, res) {
+  let cardid = parseInt(req.body.id);
+  try {
+    await myDB.deleteTask(cardid);
+  } catch (e) {
+    console.log("Error in db", e);
+    res.status(300).json({
+      cards: [],
+      msg: "Error in the query",
+      error: true,
+      errorObj: JSON.stringify(e),
+    });
+  }
+});
+
 router.post("/editTask", async function (req, res) {
   let tasks = req.body;
   const userid = req.params.userid;
@@ -94,20 +109,7 @@ router.post("/addCard", async function (req, res) {
     });
   }
 });
-router.post("/delete", async function (req, res) {
-  let cardid = parseInt(req.body.id);
-  try {
-    await myDB2.deleteCard(cardid);
-  } catch (e) {
-    console.log("Error in db", e);
-    res.status(300).json({
-      cards: [],
-      msg: "Error in the query",
-      error: true,
-      errorObj: JSON.stringify(e),
-    });
-  }
-});
+
 router.post("/deletecard", async function (req, res) {
   let cardid = parseInt(req.body.id);
   try {

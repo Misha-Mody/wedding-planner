@@ -19,6 +19,21 @@ function Todo({ todos, completeTodo, removeTodo, updateTodo, userid }) {
     });
   };
 
+  const deleteTodo = async (id) => {
+    removeTodo(id);
+
+    await fetch("/delete", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({ id: id }),
+    }).catch((error) => {
+      console.log(error);
+      return;
+    });
+  };
+
   if (edit.id) {
     return <TodoForm userid={userid} edit={edit} onSubmit={submitUpdate} />;
   }
@@ -33,7 +48,7 @@ function Todo({ todos, completeTodo, removeTodo, updateTodo, userid }) {
       </div>
       <div className="icons">
         <RiCloseCircleLine
-          onClick={() => removeTodo(todo.taskid)}
+          onClick={() => deleteTodo(todo.taskid)}
           className="delete-icon"
         />
         <TiEdit
