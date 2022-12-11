@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import PropTypes from "prop-types";
 import ViewCard from "./ViewCard";
 import { FaTrash } from "react-icons/fa";
@@ -15,9 +15,17 @@ export default function DisplayCards({ cards }) {
     venue: "",
     theme: "",
   });
+  const [dcard, setdCard] = useState(cards);
+
+  useEffect(() => {
+    setdCard(cards);
+  }, [cards]);
 
   async function deletecard(cardid) {
-    window.location.reload(false);
+    // window.location.reload(false);
+    const removedArr = [...dcard].filter((c) => c.cardid !== cardid);
+    setdCard(removedArr);
+
     await fetch("/deletecard", {
       method: "POST",
       headers: {
@@ -33,7 +41,7 @@ export default function DisplayCards({ cards }) {
   return (
     <div className="container">
       <div className="row display">
-        {cards.map((c, idx) => {
+        {dcard.map((c, idx) => {
           return (
             <div
               onClick={(e) => {
