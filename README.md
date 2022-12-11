@@ -17,9 +17,21 @@ Paragraphs - https://fonts.google.com/share?selection.family=Karla%7CMerriweathe
 
 For the tasks in the to-do list, I have used this color pallette.
 Reference - https://coolors.co/f7d1cd-e8c2ca-d1b3c4-b392ac-735d78
+![Color Palette](https://user-images.githubusercontent.com/44525752/206892929-cc52e1d3-da01-4283-b96d-2ddb2c37a9e3.png)
+
 
 For the tasks that can be added from the dropdown, I wanted there to be a contrast.
 Reference - https://coolors.co/dad7cd-a3b18a-588157-3a5a40-344e41
+![colorp-2](https://user-images.githubusercontent.com/44525752/206892944-c7d0d012-4c22-4890-aebe-3d6c6aeaea9c.png)
+
+
+After Changes
+<img width="1426" alt="Screenshot 2022-12-11 at 12 03 57 AM" src="https://user-images.githubusercontent.com/44525752/206892962-595c4fbf-6940-4b48-9e93-c2b08ee65553.png">
+
+
+Before Changes
+<img width="1429" alt="Screenshot 2022-11-29 at 4 07 21 PM" src="https://user-images.githubusercontent.com/44525752/204675702-decea34d-c55b-4377-8cac-6b9f7da326d9.png">
+
 
 # Demo Link
 
