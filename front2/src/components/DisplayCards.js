@@ -4,7 +4,7 @@ import ViewCard from "./ViewCard";
 import { FaTrash } from "react-icons/fa";
 import "../styles/DisplayCards.css";
 
-export default function DisplayCards({ cards }) {
+export default function DisplayCards({ cards, userid, deleteCard }) {
   const [card, setCard] = useState({
     userid: "",
     cardid: "",
@@ -21,10 +21,9 @@ export default function DisplayCards({ cards }) {
     setdCard(cards);
   }, [cards]);
 
-  async function deletecard(cardid) {
+  async function deletecardbtn(cardid) {
     // window.location.reload(false);
-    const removedArr = [...dcard].filter((c) => c.cardid !== cardid);
-    setdCard(removedArr);
+    deleteCard(cardid);
 
     await fetch("/deletecard", {
       method: "POST",
@@ -61,7 +60,7 @@ export default function DisplayCards({ cards }) {
             >
               {/* <input type="text" readOnly value={c.cardid} hidden></input> */}
               {"Wedding Invite " + (idx + 1)}
-              <FaTrash onClick={() => deletecard(c.cardid)} />{" "}
+              <FaTrash onClick={() => deletecardbtn(c.cardid)} />{" "}
             </div>
           );
         })}

@@ -32,18 +32,22 @@ export default function CreateCard(props) {
       theme: "1",
     });
 
-    window.location.reload();
+    // window.location.reload();
+
+    const newc = {
+      userid: props.userid,
+      cardid: Math.floor(Math.random() * 10000),
+      ...newEntry,
+    };
+
+    props.addCard(newc);
 
     await fetch("/addcard", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
       },
-      body: JSON.stringify({
-        userid: props.userid,
-        cardid: Math.floor(Math.random() * 10000),
-        ...newEntry,
-      }),
+      body: JSON.stringify(newc),
     }).catch((error) => {
       console.log(error);
       return;

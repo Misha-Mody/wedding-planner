@@ -21,6 +21,16 @@ export default function Card() {
     }
   }
 
+  const deleteCard = async (cardid) => {
+    const removedArr = [...cards].filter((c) => c.cardid !== cardid);
+    setCards(removedArr);
+  };
+
+  const addCard = async (card) => {
+    const newCards = [...cards, card];
+    setCards(newCards);
+  };
+
   useEffect(() => {
     reloadData();
     return () => {};
@@ -32,11 +42,15 @@ export default function Card() {
       <div className="container">
         <div className="row mt-3">
           <h1>Creat Quick and Easy Wedding Cards</h1>
-          <CreateCard userid={userid}></CreateCard>
+          <CreateCard userid={userid} addCard={addCard}></CreateCard>
         </div>
         <div className="row mt-5">
           <h1>View all your created cards here</h1>
-          <DisplayCards cards={cards} userid={userid}></DisplayCards>
+          <DisplayCards
+            cards={cards}
+            userid={userid}
+            deleteCard={deleteCard}
+          ></DisplayCards>
         </div>
       </div>
     </React.Fragment>
