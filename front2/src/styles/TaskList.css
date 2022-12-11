@@ -13,7 +13,8 @@
 
   .complete {
     text-decoration: line-through;
-    opacity: 0.4;
+    opacity: 0.8;
+    font-weight: bolder;
   }
   
   .todo-form {
@@ -110,8 +111,8 @@
   }
 
 .accordion-button{
-    background-color:  #588157 !important;
-    color: white;
+    background-color:  #5881578c !important;
+
 }
 
 

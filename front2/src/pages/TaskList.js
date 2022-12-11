@@ -131,7 +131,7 @@ export default function TaskList() {
             </div>
           </div>
           <div className="col-sm-12 col-lg-6">
-            <h3 className="mb-2">Some Common Tasks</h3>
+            <h2 className="mb-2">Some Common Tasks</h2>
             <div className="dropdown-container">
               <div className="accordion" id="accordionFlushExample">
                 <div className="accordion-item">
