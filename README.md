@@ -38,6 +38,13 @@ https://johnguerra.co/classes/webDevelopment_fall_2022/
 
 2. 80% - Frontend and backend of the wedding card generator feature where users can select a theme and add names on card and also view and delete previously made cards.
 
+# Video 
+https://loom.com/share/bdad4f5ff6324f21a6b6dedd474a26cc
+
+
+# Design Document
+
+https://docs.google.com/document/d/1nvPZD7E2ACgfGQE0EmPz7LeEbR8tsXJijxKbMa1lVx4/edit?usp=sharing
 
 
 # Screenshots
