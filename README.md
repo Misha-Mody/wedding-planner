@@ -11,6 +11,7 @@ Misha Mody
 Refering the following [link](https://www.fontpair.co/pairings/karla-merriweather) I have selected this font pairing for me heading and preceding paragraphs.
 
 Heading - https://fonts.google.com/share?selection.family=Karla
+
 Paragraphs - https://fonts.google.com/share?selection.family=Karla%7CMerriweather:wght@300
 
 # Color Palette changes
