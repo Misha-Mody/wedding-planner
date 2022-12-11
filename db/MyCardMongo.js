@@ -4,7 +4,7 @@ dotenv.config();
 
 export function MyCardMongo() {
   const myDB2 = {};
-  const mongoURL = process.env.REACT_APP_MONGO_URL;
+  const mongoURL = process.env.REACT_APP_MONGO_URL || "mongodb://0.0.0.0:27017";
   const DB_NAME = "WeddingPlanner";
   const COL_NAME = "Cards";
 
