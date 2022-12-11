@@ -1,9 +1,10 @@
 import { MongoClient } from "mongodb";
-import config from "./config.json" assert { type: "json" };
+import * as dotenv from "dotenv";
+dotenv.config();
 
 export function MyCardMongo() {
   const myDB2 = {};
-  const mongoURL = config.mongo.uri;
+  const mongoURL = process.env.REACT_APP_MONGO_URL;
   const DB_NAME = "WeddingPlanner";
   const COL_NAME = "Cards";
 
