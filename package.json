@@ -5,13 +5,12 @@
   "type": "module",
   "scripts": {
     "start": "node ./node_modules/nodemon/bin/nodemon.js ./bin/www",
-    "postinstall": "cd front2 && npm install && npm run build",
-    "initdb":
-    "mongoimport -d WeddingPlanner -c UserTask --jsonArray --file data/task.json & mongoimport -d WeddingPlanner -c Cards --jsonArray --file data/card.json"
+    "postinstall": "cd front2 && npm install && npm run build"
   },
   "dependencies": {
     "cookie-parser": "~1.4.4",
     "debug": "~2.6.9",
+    "dotenv": "^16.0.3",
     "eslint": "^8.27.0",
     "eslint-config-react": "^1.1.7",
     "eslint-plugin-prettier": "^4.2.1",
@@ -22,3 +21,5 @@
     "prettier": "^2.7.1"
   }
 }
+
+

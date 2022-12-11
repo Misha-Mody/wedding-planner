@@ -1,8 +1,9 @@
 import { MongoClient } from "mongodb";
+import config from "./config.json" assert { type: "json" };
 
 export function MyCardMongo() {
   const myDB2 = {};
-  const mongoURL = process.env.MONGO_URL || "mongodb://0.0.0.0:27017";
+  const mongoURL = config.mongo.uri;
   const DB_NAME = "WeddingPlanner";
   const COL_NAME = "Cards";
 
