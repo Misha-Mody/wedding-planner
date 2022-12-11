@@ -30,11 +30,13 @@ Reference - https://coolors.co/dad7cd-a3b18a-588157-3a5a40-344e41
 
 
 After Changes
-<img width="1426" alt="Screenshot 2022-12-11 at 12 03 57 AM" src="https://user-images.githubusercontent.com/44525752/206892962-595c4fbf-6940-4b48-9e93-c2b08ee65553.png">
+
+<img width="1011" alt="Screenshot 2022-12-11 at 12 09 16 AM" src="https://user-images.githubusercontent.com/44525752/206893127-233f9613-18b2-4ba6-b94a-8c7173226724.png">
 
 
 Before Changes
-<img width="1429" alt="Screenshot 2022-11-29 at 4 07 21 PM" src="https://user-images.githubusercontent.com/44525752/204675702-decea34d-c55b-4377-8cac-6b9f7da326d9.png">
+
+<img width="1011" alt="Screenshot 2022-12-11 at 12 09 33 AM" src="https://user-images.githubusercontent.com/44525752/206893140-ebeef566-f082-4cb9-8b61-fd7215cdbf8e.png">
 
 
 # Demo Link
