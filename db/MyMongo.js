@@ -8,11 +8,21 @@ export function MyMongoDB() {
   const DB_NAME = "WeddingPlanner";
   const COL_NAME = "UserTask";
 
+  async function listDatabases(client) {
+    databasesList = await client.db().admin().listDatabases();
+
+    console.log("Databases:");
+    databasesList.databases.forEach((db) => console.log(` - ${db.name}`));
+  }
+
   myDB.getTasks = async (userid) => {
     let client;
     try {
       client = new MongoClient(mongoURL);
-      const col = client.db(DB_NAME).collection(COL_NAME);
+      await client.connect();
+      const db = await client.db(DB_NAME);
+      const col = await db.collection(COL_NAME);
+
       return await col
         .find({ userid: parseInt(userid) })
         .sort({ _id: -1 })
@@ -25,7 +35,9 @@ export function MyMongoDB() {
     let client;
     try {
       client = new MongoClient(mongoURL);
-      const col = client.db(DB_NAME).collection(COL_NAME);
+      await client.connect();
+      const db = await client.db(DB_NAME);
+      const col = await db.collection(COL_NAME);
       return await col.updateOne(
         { taskid: parseInt(updated.taskid) },
         { $set: { task: updated.task } }
@@ -38,7 +50,9 @@ export function MyMongoDB() {
     let client;
     try {
       client = new MongoClient(mongoURL);
-      const col = client.db(DB_NAME).collection(COL_NAME);
+      await client.connect();
+      const db = await client.db(DB_NAME);
+      const col = await db.collection(COL_NAME);
       return await col.updateOne(
         { taskid: parseInt(taskid) },
         { $set: { complete: val } }
@@ -52,7 +66,9 @@ export function MyMongoDB() {
     let client;
     try {
       client = new MongoClient(mongoURL);
-      const col = client.db(DB_NAME).collection(COL_NAME);
+      await client.connect();
+      const db = await client.db(DB_NAME);
+      const col = await db.collection(COL_NAME);
       return await col.insertOne({
         userid: task.userid,
         task: task.task,
@@ -67,7 +83,9 @@ export function MyMongoDB() {
     let client;
     try {
       client = new MongoClient(mongoURL);
-      const col = client.db(DB_NAME).collection(COL_NAME);
+      await client.connect();
+      const db = await client.db(DB_NAME);
+      const col = await db.collection(COL_NAME);
       return await col.deleteOne({ taskid: parseInt(taskid) });
     } finally {
       client.close();

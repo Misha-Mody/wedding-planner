@@ -12,7 +12,9 @@ export function MyCardMongo() {
     let client;
     try {
       client = new MongoClient(mongoURL);
-      const col = client.db(DB_NAME).collection(COL_NAME);
+      await client.connect();
+      const db = await client.db(DB_NAME);
+      const col = await db.collection(COL_NAME);
       return await col.find({ userid: parseInt(userid) }).toArray();
     } finally {
       client.close();
@@ -23,7 +25,9 @@ export function MyCardMongo() {
     let client;
     try {
       client = new MongoClient(mongoURL);
-      const col = client.db(DB_NAME).collection(COL_NAME);
+      await client.connect();
+      const db = await client.db(DB_NAME);
+      const col = await db.collection(COL_NAME);
       return await col.insertOne({
         userid: card.userid,
         cardid: card.cardid,
@@ -43,7 +47,9 @@ export function MyCardMongo() {
     let client;
     try {
       client = new MongoClient(mongoURL);
-      const col = client.db(DB_NAME).collection(COL_NAME);
+      await client.connect();
+      const db = await client.db(DB_NAME);
+      const col = await db.collection(COL_NAME);
       return await col.deleteOne({ cardid: parseInt(cardid) });
     } finally {
       client.close();

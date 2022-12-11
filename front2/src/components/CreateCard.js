@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import PropTypes from "prop-types";
-import { useNavigate } from "react-router";
 import "../styles/CreateCard.css";
 
 export default function CreateCard(props) {
@@ -12,8 +11,6 @@ export default function CreateCard(props) {
     venue: "",
     theme: "1",
   });
-
-  const navigate = useNavigate();
 
   function updateForm(value) {
     return setForm((prev) => {
