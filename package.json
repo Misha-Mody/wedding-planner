@@ -5,6 +5,9 @@
   "type": "module",
   "scripts": {
     "start": "node ./node_modules/nodemon/bin/nodemon.js ./bin/www",
+    "client": "npm start --prefix front2",
+    "clientinstall": "npm install --prefix front2",
+    "dev": "concurrently \"npm start\" \"npm run client\"",
     "postinstall": "cd front2 && npm install && npm run build"
   },
   "dependencies": {
