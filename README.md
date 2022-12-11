@@ -6,13 +6,40 @@ Wedding planner application to manage all wedding related tasks.
 
 Misha Mody
 
-# Class link
+# Typography changes
 
-https://johnguerra.co/classes/webDevelopment_fall_2022/
+Refering the following [link](https://www.fontpair.co/pairings/karla-merriweather) I have selected this font pairing for me heading and preceding paragraphs.
+
+Heading - https://fonts.google.com/share?selection.family=Karla
+Paragraphs - https://fonts.google.com/share?selection.family=Karla%7CMerriweather:wght@300
+
+# Color Palette changes
+
+For the tasks in the to-do list, I have used this color pallette.
+Reference - https://coolors.co/f7d1cd-e8c2ca-d1b3c4-b392ac-735d78
+
+For the tasks that can be added from the dropdown, I wanted there to be a contrast.
+Reference - https://coolors.co/dad7cd-a3b18a-588157-3a5a40-344e41
 
 # Demo Link
 
 https://weddings-planner.onrender.com/
+
+# Usability Study Report Link
+
+https://docs.google.com/document/d/1jhkSpW2n6vnRZomLZgEXl1Lv73cz6Dcf7G55h68vQUY/edit?usp=sharing
+
+# Class link
+
+https://johnguerra.co/classes/webDevelopment_fall_2022/
+
+# Video
+
+https://loom.com/share/bdad4f5ff6324f21a6b6dedd474a26cc
+
+# Design Document
+
+https://docs.google.com/document/d/1nvPZD7E2ACgfGQE0EmPz7LeEbR8tsXJijxKbMa1lVx4/edit?usp=sharing
 
 # Build Instructions
 
@@ -44,14 +71,6 @@ https://weddings-planner.onrender.com/
 1. 60 % - Frontend and backend of the task manager module to track some common wedding tasks along with dropdown functionality to select tasks from there.
 
 2. 80% - Frontend and backend of the wedding card generator feature where users can select a theme and add names on card and also view and delete previously made cards.
-
-# Video
-
-https://loom.com/share/bdad4f5ff6324f21a6b6dedd474a26cc
-
-# Design Document
-
-https://docs.google.com/document/d/1nvPZD7E2ACgfGQE0EmPz7LeEbR8tsXJijxKbMa1lVx4/edit?usp=sharing
 
 # Screenshots
 

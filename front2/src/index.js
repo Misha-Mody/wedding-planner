@@ -2,6 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import TaskList from "./pages/TaskList";
 import Card from "./pages/Card";
+import "./styles/index.css";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 const router = createBrowserRouter([

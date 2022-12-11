@@ -7,3 +7,15 @@ input{
     border:3px solid rgb(17, 114, 17);
     margin-top: 30px;
 }
+
+.todo-button {
+    padding: 16px;
+    border: none;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+    outline: none;
+    background-color: #592941;
+    color: #fff;
+    text-transform: capitalize;
+  }
+  

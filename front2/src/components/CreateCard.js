@@ -149,7 +149,7 @@ export default function CreateCard(props) {
 
         <div className="row mt-4">
           <div className="col-sm-12 col-lg-4">
-            <button type="submit" className="btn btn-primary">
+            <button type="submit" className="todo-button">
               GENERATE CARD
             </button>
           </div>

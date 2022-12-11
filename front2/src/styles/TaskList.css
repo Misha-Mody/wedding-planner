@@ -23,7 +23,7 @@
   .todo-input {
     padding: 14px 32px 14px 16px;
     border-radius: 4px 0 0 4px;
-    border: 2px solid #5d0cff;
+    border: 3px solid #344E41;
     outline: none;
     width: 320px;
     background: transparent;
@@ -39,25 +39,17 @@
     border-radius: 0 4px 4px 0;
     cursor: pointer;
     outline: none;
-    background: linear-gradient(
-      90deg,
-      rgba(93, 12, 255, 1) 0%,
-      rgba(155, 0, 250, 1) 100%
-    );
+    background-color: #592941;
     color: #fff;
     text-transform: capitalize;
   }
   
   .todo-input.edit {
-    border: 2px solid #149fff;
+    border: 3px solid #344E41;
   }
   
   .todo-button.edit {
-    background: linear-gradient(
-      90deg,
-      rgba(20, 159, 255, 1) 0%,
-      rgba(17, 122, 255, 1) 100%
-    );
+    background-color: #592941;
     padding: 16px 22px;
   }
   
@@ -67,12 +59,12 @@
     justify-content: space-between;
     align-items: center; 
     margin: 4px auto;
-    color: #fff;
-    background: linear-gradient(
+    background-color: #F7D1CD ;
+    /* background: linear-gradient(
       90deg,
-      rgba(255, 118, 20, 1) 0%,
-      rgba(255, 84, 17, 1) 100%
-    );
+      #F7D1CD 0%,
+      #f7d1cd74 100%
+    ); */
   
     padding: 16px;
     border-radius: 5px;
@@ -80,27 +72,15 @@
   }
   
   .todo-row:nth-child(4n + 1) {
-    background: linear-gradient(
-      90deg,
-      rgba(93, 12, 255, 1) 0%,
-      rgba(155, 0, 250, 1) 100%
-    );
+    background-color: #E8C2CA;
   }
   
   .todo-row:nth-child(4n + 2) {
-    background: linear-gradient(
-      90deg,
-      rgba(255, 12, 241, 1) 0%,
-      rgba(250, 0, 135, 1) 100%
-    );
+    background-color: #D1B3C4 ;
   }
   
   .todo-row:nth-child(4n + 3) {
-    background: linear-gradient(
-      90deg,
-      rgba(20, 159, 255, 1) 0%,
-      rgba(17, 122, 255, 1) 100%
-    );
+    background-color:#B392AC ;
   }
   
   .icons {
@@ -121,7 +101,7 @@
 
   .dropdown-container
   {
-    border: 2px solid sandybrown;
+    border: 3px solid #344E41;
     padding: 20px;
   }
 
@@ -130,11 +110,13 @@
   }
 
 .accordion-button{
-    background-color: rgb(145, 210, 210);
+    background-color:  #588157 !important;
+    color: white;
 }
 
+
 .accordion-task{
-    background-color: #e7f1ff;
+    background-color:#DAD7CD;
     padding: 8px 14px;
     margin: 7px;
     display: flex;
