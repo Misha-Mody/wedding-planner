@@ -41,7 +41,7 @@ export default function Card() {
       <Navbar />
       <div className="container">
         <div className="row mt-3">
-          <h1>Creat Quick and Easy Wedding Cards</h1>
+          <h1>Create Quick and Easy Wedding Cards</h1>
           <CreateCard userid={userid} addCard={addCard}></CreateCard>
         </div>
         <div className="row mt-5">

@@ -147,6 +147,9 @@ export default function CreateCard(props) {
             >
               <option value="1">Florals</option>
               <option value="2">Conffetti</option>
+              <option value="3">Lights</option>
+              <option value="4">Hearts</option>
+              <option value="5">Firecrackers</option>
             </select>
           </div>
         </div>

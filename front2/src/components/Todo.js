@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import TodoForm from "./TodoForm";
 import { RiCloseCircleLine } from "react-icons/ri";
 import { TiEdit } from "react-icons/ti";
+import { FaCheckCircle } from "react-icons/fa";
 
 import PropTypes from "prop-types";
 
@@ -43,10 +44,12 @@ function Todo({ todos, completeTodo, removeTodo, updateTodo, userid }) {
       className={todo.complete ? "todo-row complete" : "todo-row"}
       key={index}
     >
-      <div onClick={() => completeTodo(todo.taskid)} key={todo.taskid}>
-        {todo.task}
-      </div>
+      <div key={todo.taskid}>{todo.task}</div>
       <div className="icons">
+        <FaCheckCircle
+          onClick={() => completeTodo(todo.taskid)}
+          className="complete-icon"
+        ></FaCheckCircle>
         <RiCloseCircleLine
           onClick={() => deleteTodo(todo.taskid)}
           className="delete-icon"

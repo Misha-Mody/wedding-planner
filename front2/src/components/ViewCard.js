@@ -8,6 +8,12 @@ export default function ViewCard(props) {
       return "../img/flower.jpg";
     } else if (theme === "2") {
       return "../img/conf.png";
+    } else if (theme === "3") {
+      return "../img/lights.png";
+    } else if (theme === "4") {
+      return "../img/heart.png";
+    } else if (theme === "5") {
+      return "../img/crackers.jpeg";
     }
   }
   return (

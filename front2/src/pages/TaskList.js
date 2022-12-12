@@ -7,6 +7,7 @@ import Navbar from "../components/Navbar";
 
 export default function TaskList() {
   const [todos, setTodos] = useState([]);
+  const [loading, setLoading] = useState(true);
   const userid = 1;
 
   async function reloadData() {
@@ -18,8 +19,9 @@ export default function TaskList() {
       console.log(e);
     }
 
-    if (data.length !== 0) {
+    if (data && data.length !== 0) {
       data && setTodos(data.tasks);
+      setLoading(false);
     }
   }
 
@@ -110,13 +112,22 @@ export default function TaskList() {
           <div className="col-sm-12 col-lg-6">
             <div className="todo-container">
               <TodoForm userid={userid} onSubmit={addTodo} />
-              <Todo
-                todos={todos}
-                completeTodo={completeTodo}
-                removeTodo={removeTodo}
-                updateTodo={updateTodo}
-                userid={userid}
-              />
+              {loading ? (
+                <div>
+                  <p>Loading all your tasks</p>
+                  <p>
+                    <img alt="loading" src={"../img/loading.gif"}></img>
+                  </p>
+                </div>
+              ) : (
+                <Todo
+                  todos={todos}
+                  completeTodo={completeTodo}
+                  removeTodo={removeTodo}
+                  updateTodo={updateTodo}
+                  userid={userid}
+                />
+              )}
             </div>
           </div>
           <div className="col-sm-12 col-lg-6">
