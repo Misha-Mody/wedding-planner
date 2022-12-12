@@ -16,7 +16,7 @@ export default function Card() {
       console.log(e);
     }
 
-    if (data.length !== 0) {
+    if (data && data.length !== 0) {
       data && setCards(data.cards);
     }
   }
