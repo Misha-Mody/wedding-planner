@@ -102,3 +102,9 @@ https://docs.google.com/document/d/1nvPZD7E2ACgfGQE0EmPz7LeEbR8tsXJijxKbMa1lVx4/
 <img width="1429" alt="Screenshot 2022-11-29 at 4 07 39 PM" src="https://user-images.githubusercontent.com/44525752/204675731-9af646f1-64df-4d29-ba2a-be2456bfcdfc.png">
 
 <img width="1061" alt="Screenshot 2022-11-29 at 4 08 00 PM" src="https://user-images.githubusercontent.com/44525752/204675773-d58b4fdf-a437-4c80-8319-c2e8d5555cec.png">
+
+
+# Feedback by Harshit Gajjar
+Nice and Beautiful UI. Loved the colors used in the app. Loved the generation of wedding cards. The concept is novel and I loved the idea. I would like to suggest some changes. On the todo page, there is a huge to-do list. If the list starts getting bigger, it looks crowded. You can maybe try having filters or search at the top to find my todo or maybe you can group the todos by category like table decor and so on. On the wedding card page, you can give an option to clear fields which were entered on the form to generate card. If I need to go try out multiple cards, I need to add details again and again. Also, if you can maybe show like a small placeholder for each wedding card or maybe allow user to rename the cards, it would be easier to track since just showing "wedding  invite 2" won't be much meaningful. Overall, very nice application. I loved the idea very much and the fonts and colors used are amazing. 
+
+Well done!!
